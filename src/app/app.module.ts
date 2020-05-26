@@ -14,6 +14,12 @@ import { FeaturedTrainingComponent } from './featured-training/featured-training
 import { NewsComponent } from './news/news.component';
 import { VirtualVisitComponent } from './virtual-visit/virtual-visit.component';
 import { TestimonyComponent } from './testimony/testimony.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ContactComponent } from './contact/contact.component';
+import { AgmCoreModule } from '@agm/core';
+import { InscriptionComponent } from './inscription/inscription.component';
+
+
 
 @NgModule({
   declarations: [
@@ -26,10 +32,16 @@ import { TestimonyComponent } from './testimony/testimony.component';
     FeaturedTrainingComponent,
     NewsComponent,
     VirtualVisitComponent,
-    TestimonyComponent
+    TestimonyComponent,
+    NotFoundComponent,
+    ContactComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDzd8Cm2cfnSaoZ3s5G2TIUSY5kQWeRdWg'
+    }),
     AppRoutingModule,
     CarouselModule,
     MDBBootstrapModule.forRoot()
