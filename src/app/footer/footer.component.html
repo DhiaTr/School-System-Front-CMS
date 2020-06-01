@@ -4,17 +4,17 @@
             <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="footer-item">
                     <h6> Nous Contacter </h6>
-                    <address>Notre adresse , Bizerte , 7050, Tunisia</address>
+                    <address>{{ contactInfo.address }}</address>
                     <ul>
-                        <li><a href="#"><i class="fas fa-phone-alt"></i> +216 26 322 xxx</a></li>
-                        <li><a href="#"><i class="fas fa-phone-alt"></i> +216 50 387 xxx</a></li>
-                        <li><a href="#"><i class="far fa-envelope"></i> info@SmartAgl.com</a></li>
+                        <li><a><i class="fas fa-phone-alt"></i> {{ contactInfo.phone1 }}</a></li>
+                        <li><a><i class="fas fa-phone-alt"></i> {{ contactInfo.phone2 }}</a></li>
+                        <li><a><i class="far fa-envelope"></i> {{ contactInfo.email }}</a></li>
                     </ul>
                     <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="{{ contactInfo.FacebookURL }}"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="{{ contactInfo.TwitterURL }}"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="{{ contactInfo.InstagramURL }}"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{ contactInfo.LinkedinURL }}"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
             </div>

@@ -34,12 +34,12 @@
                 </div>
                 <div class="contact-list">
                     <ul class="contact-details">
-                        <li><i class="fa fa-link"></i> <a href="#">www.curricular.com</a></li>
-                        <li><i class="fa fa-envelope"></i> <a href="mailto:info@yoursite.com">info@curricular.com</a>
+                        <li><i class="far fa-envelope"></i> <a href="mailto:{{contactInfo.email}}">
+                                {{ contactInfo.email }}</a>
                         </li>
-                        <li><i class="fa fa-phone"></i> +90 123 45 67</li>
-                        <li><i class="fa fa-fax"></i> +90 123 45 68</li>
-                        <li><i class="fa fa-home"></i> Curricular INC 22 Elizabeth Str. Melbourne. Victoria 8777.</li>
+                        <li><i class="fas fa-phone-alt"></i>{{ contactInfo.phone1 }}</li>
+                        <li><i class="fas fa-phone-alt"></i>{{ contactInfo.phone2 }}</li>
+                        <li>{{ contactInfo.address }}</li>
                     </ul>
                 </div>
             </div>

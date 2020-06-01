@@ -18,6 +18,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { AgmCoreModule } from '@agm/core';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { ContactInfoService } from './services/contact-info.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -44,9 +46,10 @@ import { InscriptionComponent } from './inscription/inscription.component';
     }),
     AppRoutingModule,
     CarouselModule,
+    HttpClientModule,
     MDBBootstrapModule.forRoot()
   ],
-  providers: [],
+  providers: [ContactInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
