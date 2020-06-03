@@ -9,51 +9,21 @@
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown" dropdown>
+            <li *ngFor="let m of menus" class="nav-item dropdown" dropdown>
                 <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
-                    mdbWavesEffect>
-                    Formation diplômante<span class="caret"></span></a>
+                    mdbWavesEffect *ngIf="m.items">
+                    {{ m.Name }}<span class="caret"></span></a>
                 <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-                    <div class="divider dropdown-divider"></div>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect *ngFor="let item of m.items ">
+                        {{ item.menu.Name }} </a>
                 </div>
             </li>
-            <li class="nav-item dropdown" dropdown>
-                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
-                    mdbWavesEffect>
-                    Formations accélérées<span class="caret"></span></a>
-                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-                    <div class="divider dropdown-divider"></div>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown" dropdown>
-                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
-                    mdbWavesEffect>
-                    Formation en langues<span class="caret"></span></a>
-                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-                    <div class="divider dropdown-divider"></div>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
-                </div>
-            </li>
-
             <li class="nav-item">
                 <a class="nav-link waves-light" mdbWavesEffect>Entreprise</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link waves-light" routerLink="/contact" mdbWavesEffect>Contact</a>
             </li>
-
-
 
         </ul>
         <!-- Links -->
