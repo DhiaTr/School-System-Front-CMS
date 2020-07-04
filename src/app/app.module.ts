@@ -20,6 +20,7 @@ import { AgmCoreModule } from '@agm/core';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ContactInfoService } from './services/contact-info.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormationsComponent } from './formations/formations.component';
 
 
 
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     TestimonyComponent,
     NotFoundComponent,
     ContactComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    FormationsComponent
   ],
   imports: [
     BrowserModule,

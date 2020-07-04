@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { FormationsComponent } from './formations/formations.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'formations', component: FormationsComponent },
   { path: 'inscription', component: InscriptionComponent },
   { path: '**', component: NotFoundComponent }
 ];

@@ -11,11 +11,11 @@
         <ul class="navbar-nav mr-auto">
             <li *ngFor="let m of menus" class="nav-item dropdown" dropdown>
                 <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
-                    mdbWavesEffect *ngIf="m.items">
-                    {{ m.Name }}<span class="caret"></span></a>
+                    mdbWavesEffect>
+                    {{ m?.Name }}<span class="caret" *ngIf="m?.items?.length != 0"></span></a>
                 <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light" mdbWavesEffect *ngFor="let item of m.items ">
-                        {{ item.menu.Name }} </a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect *ngFor="let item of m?.items ">
+                        {{ item?.Name }} </a>
                 </div>
             </li>
             <li class="nav-item">
