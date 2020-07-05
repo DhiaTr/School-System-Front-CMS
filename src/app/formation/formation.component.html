@@ -1,0 +1,125 @@
+<div class="view">
+    <div class="banner"></div>
+    <div class="mask flex-center rgba-black-strong">
+        <h1 class="text-light"> {{ menuName }} </h1>
+    </div>
+</div>
+<div class="container my-4">
+    <div class="uv-single-contest uv-course-details">
+        <div class="container">
+            <div class="educationpress-main-content-inner row">
+                <div id="primary" class="content-area col-md-8 col-sm-12">
+                    <div class="uv-single-course">
+                        <div class="single-each-content uv-course-details-inner shadow-3">
+                            <img src="http://localhost:3000/{{ formation?.image }}" alt=""
+                                class="img-responsive uv-course-banner">
+                            <div class="uv-cd-heading uv-cd-wrap">
+                                <div class="each-title">
+                                    <h2>{{ formation?.Name }}</h2>
+                                    <!-- <div class="uv-course-reveiw">
+
+                                    </div> -->
+                                </div>
+                                <!-- <div class="uv-cd-meta">
+                                    <ul>
+                                        <li>
+                                            <i class="icon-book"></i>
+                                            <div class="uv-course-meta-des">
+                                                <h6>Photoshop</h6>
+                                                <span>Categories</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> -->
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="uv-cd-about  uv-cd-wrap">
+                                <h3>à propos de la formation</h3>
+                                {{ formation?.Name }}
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- #primary -->
+
+                <aside class="uv-sidebar col-md-4 col-sm-12">
+                    <div class="uv_featured_course_list uv_aside2_hdg mb30">
+                        <h5>Détails du Formation</h5>
+                        <ul>
+                            <li>
+                                <div class="uv_course_dur_list">
+                                    <span><i class="far fa-clock mr-1"></i> Durée</span>
+                                </div>
+                                <span class="uv_duration">{{ formation?.durationInMonths }} Mois</span>
+                            </li>
+                            <li>
+                                <div class="uv_course_dur_list">
+                                    <span><i class="fas fa-align-left mr-2"></i>Nombre Des Sessions</span>
+                                </div>
+                                <span class="uv_duration">{{ formation?.nOfLectures }}</span>
+                            </li>
+                            <!-- <li>
+                                <div class="uv_course_dur_list">
+                                    <i class="fa fa-address-card-o"></i>
+                                    <span>Certification</span>
+                                </div>
+                                <span class="uv_duration">Yes</span>
+                            </li> -->
+                            <!-- <li>
+                                <div class="uv_course_dur_list">
+                                    <i class="fa fa-bullhorn"></i>
+                                    <span>Quizzes</span>
+                                </div>
+                                <span class="uv_duration">2</span>
+                            </li> -->
+                            <!-- <li>
+                                <div class="uv_course_dur_list">
+                                    <i class="fa fa-address-book-o"></i>
+                                    <span>Student</span>
+                                </div>
+                                <span class="uv_duration">50</span>
+                            </li> -->
+                            <!-- <li>
+                                <div class="uv_course_dur_list">
+                                    <i class="fa fa-database"></i>
+                                    <span>Skill Level</span>
+                                </div>
+                                <span class="uv_duration">Begineer</span>
+                            </li> -->
+                            <li>
+                                <div class="uv_course_dur_list">
+                                    <span> <i class="fas fa-money-bill mr-1"></i>Prix</span>
+                                </div>
+                                <span class="uv_duration">{{ formation?.Price }} TND</span>
+                            </li>
+                            <li class="flex-center">
+                                <a href="inscription.html" class="btn btn-base"> rejoignez-nous <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
+                            </li>
+                            <br>
+                        </ul>
+                        <br>
+
+                    </div>
+
+
+
+                    <!--  <div class="uv_course_intro default_width mb30">
+                        <figure>
+                            <img src="assets/images/course-intro.jpg" alt="">
+                            <figcaption class="uv_play_btn">
+                            <a data-rel="prettyPhoto" href="https://www.youtube.com/watch?v=Z_Qb-BOAVac"><i class="fa fa-play"></i></a>
+                            </figcaption>
+                        </figure>
+                        <p>Courses Introducation</p>
+                    </div> -->
+
+
+
+
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>

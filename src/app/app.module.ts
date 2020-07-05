@@ -21,6 +21,10 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { ContactInfoService } from './services/contact-info.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormationsComponent } from './formations/formations.component';
+import { MenusService } from './services/menus.service';
+import { FormationService } from './services/formation.service';
+import { PageService } from './services/page.service';
+import { FormationComponent } from './formation/formation.component';
 
 
 
@@ -39,7 +43,8 @@ import { FormationsComponent } from './formations/formations.component';
     NotFoundComponent,
     ContactComponent,
     InscriptionComponent,
-    FormationsComponent
+    FormationsComponent,
+    FormationComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +56,12 @@ import { FormationsComponent } from './formations/formations.component';
     HttpClientModule,
     MDBBootstrapModule.forRoot()
   ],
-  providers: [ContactInfoService],
+  providers: [
+    ContactInfoService,
+    MenusService,
+    FormationService,
+    PageService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

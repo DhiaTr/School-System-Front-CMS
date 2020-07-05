@@ -1,5 +1,5 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue-grey darken-3" [containerInside]="false">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue-grey darken-3 sticky-top" [containerInside]="false">
 
     <!-- Navbar brand -->
     <mdb-navbar-brand><a class="navbar-brand" href="/">InfoPlus</a></mdb-navbar-brand>
@@ -14,13 +14,10 @@
                     mdbWavesEffect>
                     {{ m?.Name }}<span class="caret" *ngIf="m?.items?.length != 0"></span></a>
                 <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light" mdbWavesEffect *ngFor="let item of m?.items ">
+                    <a class="dropdown-item waves-light" mdbWavesEffect *ngFor="let item of m?.items "
+                        [routerLink]="['/formations/', item.Page]">
                         {{ item?.Name }} </a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-light" mdbWavesEffect>Entreprise</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link waves-light" routerLink="/contact" mdbWavesEffect>Contact</a>
             </li>
@@ -30,21 +27,9 @@
 
         <ul class="navbar-nav ml-auto nav-flex-icons">
             <li class="nav-item">
-                <a class="nav-link waves-light" mdbWavesEffect>Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link">
-                    <div class="btn-group" mdbDropdown>
-                        <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-primary">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="divider dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </div>
-                </a>
+                <button class="btn btn-secondary"> Espace Client <mdb-icon fas icon="user" class="ml-1"
+                        mdbDropdownToggle></mdb-icon>
+                </button>
             </li>
         </ul>
     </links>
