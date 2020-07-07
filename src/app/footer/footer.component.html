@@ -11,10 +11,14 @@
                         <li><a><i class="far fa-envelope"></i> {{ contactInfo?.email }}</a></li>
                     </ul>
                     <ul class="social">
-                        <li><a href="{{ contactInfo?.FacebookURL }}"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="{{ contactInfo?.TwitterURL }}"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="{{ contactInfo?.InstagramURL }}"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="{{ contactInfo?.LinkedinURL }}"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/{{ contactInfo?.FacebookID }}"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/{{ contactInfo?.TwitterID }}"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/{{ contactInfo?.InstagramID }}"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/{{ contactInfo?.LinkedinID }}"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
             </div>

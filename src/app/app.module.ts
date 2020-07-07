@@ -25,6 +25,7 @@ import { MenusService } from './services/menus.service';
 import { FormationService } from './services/formation.service';
 import { PageService } from './services/page.service';
 import { FormationComponent } from './formation/formation.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
@@ -44,7 +45,8 @@ import { FormationComponent } from './formation/formation.component';
     ContactComponent,
     InscriptionComponent,
     FormationsComponent,
-    FormationComponent
+    FormationComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

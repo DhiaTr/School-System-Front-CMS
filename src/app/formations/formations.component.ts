@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormationService } from '../services/formation.service';
-import { MenusService } from '../services/menus.service';
+
 import { PageService } from '../services/page.service';
 import { ActivatedRoute } from '@angular/router';
 

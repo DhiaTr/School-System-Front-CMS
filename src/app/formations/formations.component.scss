@@ -3808,3 +3808,12 @@ ul li {
 		text-align: center;
 	}
 }
+
+.container{
+	min-height: 40vh;
+}
+
+.desc {
+	max-height: 195px;
+	text-overflow: ellipsis;
+}

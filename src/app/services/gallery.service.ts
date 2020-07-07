@@ -6,17 +6,12 @@ import { throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class MenusService {
+export class GalleryService {
 
   constructor(private http: HttpClient) { }
 
   getAll() {
-    return this.http.get('http://localhost:3000/api/menus')
-      .pipe(catchError(this.handleError));
-  }
-
-  getMenuItems(id) {
-    return this.http.get('http://localhost:3000/api/menuItems/' + id)
+    return this.http.get('http://localhost:3000/api/media')
       .pipe(catchError(this.handleError));
   }
 

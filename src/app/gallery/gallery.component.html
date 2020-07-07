@@ -1,0 +1,14 @@
+<div class="container my-4">
+    <div class="row">
+        <h2 class="col-12 text-center">Gallerie</h2>
+        <h4 class="col-12 text-center">découvrir notre monde</h4>
+        <div class="col-12">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4" *ngFor="let i of images">
+            <img src="http://localhost:3000/{{i.path}}" class="img-fluid my-2" alt="Responsive image">
+        </div>
+    </div>
+</div>
